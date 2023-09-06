@@ -1,30 +1,40 @@
-h1,
-p {
-  font-family: Lato;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 
-body{
+body {
   display: flex;
   height: 100vh;
   width: 100%;
   justify-content: center;
   align-items: center;
+  font-family: 'Inter', sans-serif;
 }
 
-.content{
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.inner-content {
   display: flex;
   gap: 18px;
+  width: max-content;
 }
 
-.input{
-
-}
-
-.btn{
+.btn {
   padding: 10px 14px;
   border-radius: 5px;
   border: none;
-  background-color: rgb(37, 224, 224);
+  background-color: rgb(54, 233, 233);
   color: black;
-  font-weight: 600;
+  font-weight: 400;
+}
+
+.result {
+  border: 1px solid gray;
+  font-size: small;
+  font-weight: 500;
+  padding: 10px 14px;
+  border-radius: 5px;
+  color: black;
 }

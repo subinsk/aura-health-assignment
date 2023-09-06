@@ -13,19 +13,20 @@ export const App: FC = () => {
   };
   return (
     <div className="content">
-      <input
-        className="input"
-        type="text"
-        placeholder="Enter your text here"
-        value={text}
-        onChange={(e) => setText(e.target.value)}
-      />
-      <button className="btn" onClick={onSubmit}>
-        Submit
-      </button>
+      <div className="inner-content">
+        <input
+          type="text"
+          placeholder="Enter your text here"
+          value={text}
+          onChange={(e) => setText(e.target.value)}
+        />
+        <button className="btn" onClick={onSubmit}>
+          Submit
+        </button>
+      </div>
       {result && (
         <div className="result">
-          <p>Longest word with unique characters: {result}</p>
+          <p>Longest word: <b>{result}</b></p>
         </div>
       )}
     </div>
