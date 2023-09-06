@@ -10,7 +10,7 @@ export const findLongestUniqueWord = (text: string) => {
       uniqueChars.add(char);
     }
 
-    if (word.length > longestWord.length) {
+    if (uniqueChars.size > longestWord.length) {
       longestWord = word;
     }
   }
